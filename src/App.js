@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Route, Routes, NavLink } from 'react-router-dom';
 import './App.css';
+// import Button from './Components/Button';
+import Add from './Pages/Add';
+import Header from './Pages/Header';
+import Section from './Pages/Section';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Edit from './Pages/Edit';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+
+      <Routes>
+        <Route path='/' element={<Section />} ></Route>
+        <Route path='/add' element={<Add />}></Route>
+        <Route path='/edit' element={<Edit />} />
+      </Routes>
     </div>
   );
 }

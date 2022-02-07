@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px !important;
+}
+.header button{
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 26px !important;
+}
+header p{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+h3{
+    font-size: 40px !important;
+    margin: 30px;
+}
+
+/* Font family: Montserrat
+Font style: Bold
+Font size: 100px
+Line height: 122px
+Line height: 100%
+Align: Center
+Vertical align: Top
+Paragraph spacing: 13px */
